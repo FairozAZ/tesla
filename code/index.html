@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Responsive Tesla Website</title>
+</head>
+<body>
+    <!-- model-3 section -->
+    <div class="bg-img bg-img-1" id="model3">
+
+        <div class="header">
+            <div class="logo"><img src="../image/logo.jpg" alt="logo"></div>
+            <div class="nav">
+                <a href="#model3">Model 3</a>
+                <a href="#modelX">Model X</a>
+                <a href="#modelS">Model S</a>
+                <a href="#modelY">Model Y</a>
+                <a href="#solarR">Solar Roof</a>
+                <a href="#solarP">Solar Pannel</a>
+            </div>
+            <div class="side-nav">
+                <a href="#">Shop</a>
+                <a href="#">Account</a>
+                <a href="#">Menu</a>
+            </div>
+            <!-- when device max-width is 1200px then show this menu and openbtn menu -->
+            <div class="laptop-nav" id="myNav">
+                <a href="#model3" onclick="closeNav()">Model 3</a>
+                <a href="#modelX" onclick="closeNav()">Model X</a>
+                <a href="#modelS" onclick="closeNav()">Model S</a>
+                <a href="#modelY" onclick="closeNav()">Model Y</a>
+                <a href="#solarR" onclick="closeNav()">Solar Roof</a>
+                <a href="#solarP" onclick="closeNav()">Solar Pannel</a>
+                <a href="#" class="laptop">Shop</a>
+                <a href="#" class="laptop">Account</a>
+                <span class="closebtn" onclick="closeNav()">&times;</span>
+            </div>
+            <div class="openbtn" onclick="openNav()">Menu</div>
+        </div>
+
+        <div class="txt txt-1">
+            <h2>Model 3</h2>
+            <p>Order Online for <u>Touch Delivery</u></p>
+        </div>
+        <div class="btn">
+            <button>Custom Order</button>
+            <button>Existing Inventory</button>
+        </div>
+    </div>
+
+    <!-- model-x section -->
+    <div class="bg-img bg-img-2" id="modelX">
+        <div class="txt">
+            <h2>Model X</h2>
+            <p>Order Online for <u>Touch Delivery</u></p>
+        </div>
+        <div class="btn">
+            <button>Custom Order</button>
+            <button>Existing Inventory</button>
+        </div>
+    </div>
+
+    <!-- model-s section -->
+    <div class="bg-img bg-img-3" id="modelS">
+        <div class="txt">
+            <h2>Model S</h2>
+            <p>Order Online for <u>Touch Delivery</u></p>
+        </div>
+        <div class="btn">
+            <button>Custom Order</button>
+            <button>Existing Inventory</button>
+        </div>
+    </div>
+
+    <!-- model-y section -->
+    <div class="bg-img bg-img-4" id="modelY">
+        <div class="txt">
+            <h2>Model Y</h2>
+            <p>Order Online for <u>Touch Delivery</u></p>
+        </div>
+        <div class="btn">
+            <button>Custom Order</button>
+            <button>Existing Inventory</button>
+        </div>
+    </div>
+
+    <!-- solar-roof section -->
+    <div class="bg-img bg-img-5" id="solarR">
+        <div class="txt">
+            <h2>Solar Roof</h2>
+            <p>Produce Clean Energy From Your Roof</p>
+        </div>
+        <div class="btn">
+            <button>Custom Order</button>
+            <button>Existing Inventory</button>
+        </div>
+    </div>
+
+    <!-- solar-pannel section -->
+    <div class="bg-img bg-img-6" id="solarP">
+        <div class="txt">
+            <h2>Solar Panels</h2>
+            <p>Lowest Cost Solar Panels in America</p>
+        </div>
+        <div class="btn">
+            <button>Custom Order</button>
+            <button>Existing Inventory</button>
+        </div>
+    </div>
+
+    <!-- accessories section -->
+    <div class="bg-img bg-img-7">
+        <div class="txt txt-2">
+            <h2>Accessories</h2>
+        </div>
+        <div class="btn btn-1">
+            <button>Shop Now</button>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>All the &copy; right reserved by Tesla</footer>
+
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "280px";
+        } 
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0";
+        } 
+      </script>
+
+</body>
+</html>
